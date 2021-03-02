@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrap">
+        <header class="header">
+          <h3 class="top-header">Simple, traffic-based pricing</h3>
+          <h5 class="second-header">Sign-up for our 30-day trial.</h5>
+          <h5 class="second-header">No credit card required.</h5>
+        </header>
+        <div class="card">
+          <span class="pageviews">100K PAGEVIEWS</span>
+          <div class="slider">
+            <input type="range" name="range" id="range" />
+          </div>
+          <div class="monthly-cost">
+            <span class="amount">$16.00</span><span class="month">/month</span>
+          </div>
+          <div class="card-options">
+            <div class="monthly-bill">Monthly Billing</div>
+            <div class="slice-btn"></div>
+            <div class="yearly-bill">Yearly Billing</div>
+            <div class="discount">25% discount</div>
+          </div>
+          <div class="card-footer">
+            <p class="info">Unlimited websites</p>
+            <p class="info">100% data ownership</p>
+            <p class="info">Email reports Start my trial</p>
+            <div class="trial-btn">Start my trial</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Chi Tran</a>.
+    </div>
+  </body>
+</html>
