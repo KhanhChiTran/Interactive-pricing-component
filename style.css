@@ -120,3 +120,40 @@ body {
   margin-left: 10px;
   font-size: 18px;
 }
+.card-options {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.card-options > * {
+  margin: 30px 0 30px 10px;
+}
+.discount {
+  color: hsl(15, 100%, 70%);
+  background-color: hsl(14, 92%, 95%);
+  padding: 3px 10px;
+  border-radius: 30px;
+}
+.card-footer {
+  padding: 30px 0;
+  border-top: 2px solid hsl(224, 65%, 95%);
+}
+.info {
+  color: var(--text);
+}
+.checkmark {
+  margin-right: 20px;
+  width: 12px;
+}
+.trial-btn {
+  width: 200px;
+  margin: 20px auto;
+  padding: 15px 20px;
+  background-color: hsl(227, 35%, 25%);
+  color: hsl(225, 20%, 60%);
+  border-radius: 36px;
+}
+.trial-btn:hover {
+  color: #fff;
+  cursor: pointer;
+}
