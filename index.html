@@ -41,10 +41,18 @@
         <div class="card">
           <span class="pageviews">100K PAGEVIEWS</span>
           <div class="slider">
-            <input type="range" name="range" id="range" />
+            <input
+              value="50"
+              min="1"
+              max="100"
+              type="range"
+              name="range"
+              id="myRange"
+              class="mySlider"
+            />
           </div>
           <div class="monthly-cost">
-            <span class="amount">$16.00</span><span class="month">/month</span>
+            <span id="amount">$16.00</span><span class="month">/month</span>
           </div>
           <div class="card-options">
             <div class="monthly-bill">Monthly Billing</div>
@@ -68,5 +76,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Chi Tran</a>.
     </div>
+    <script src="./main.js"></script>
   </body>
 </html>
