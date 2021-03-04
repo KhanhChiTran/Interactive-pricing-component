@@ -50,6 +50,7 @@ body {
   text-align: center;
 }
 .pageviews {
+  display: block;
   color: var(--text);
   letter-spacing: 3px;
   font-weight: 800;
@@ -133,6 +134,10 @@ body {
   background-color: hsl(14, 92%, 95%);
   padding: 3px 10px;
   border-radius: 30px;
+}
+.discount:hover {
+  color: red;
+  background-color: rgba(255, 166, 0, 0.781);
 }
 .card-footer {
   padding: 30px 0;
