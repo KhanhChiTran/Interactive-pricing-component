@@ -13,7 +13,8 @@ body {
   background-image: url(./images/bg-pattern.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 6vh;
+  padding-top: 3vh;
+  padding-bottom: 5vh;
 }
 
 .wrap {
@@ -43,7 +44,7 @@ body {
   font-size: 15px;
 }
 .card {
-  margin-top: 50px;
+  margin-top: 20px;
   padding: 40px 0;
   border-radius: 10px;
   background-color: #fff;
@@ -135,10 +136,7 @@ body {
   padding: 3px 10px;
   border-radius: 30px;
 }
-.discount:hover {
-  color: red;
-  background-color: rgba(255, 166, 0, 0.781);
-}
+
 .card-footer {
   padding: 30px 0;
   border-top: 2px solid hsl(224, 65%, 95%);
@@ -162,3 +160,49 @@ body {
   color: #fff;
   cursor: pointer;
 }
+#switch {
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 9px;
+  background-color: hsl(223, 50%, 87%);
+  height: 25px;
+  width: 45px;
+  border-radius: 36px;
+  cursor: pointer;
+  outline: none;
+  transition: 400ms;
+}
+
+#switch::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: hsla(0, 0%, 100%, 0.705);
+  transition: 200ms;
+}
+
+#switch:checked {
+  background-color: hsl(174, 86%, 45%);
+}
+#switch:checked::before {
+  left: 26px;
+  background-color: white;
+}
+@media (min-width: 550px) {
+  .card-footer {
+    display: flex;
+    align-items: center;
+    padding: 30px 50px;
+  }
+  .info-item {
+    text-align: left;
+  }
+  .trial-btn {
+    margin-right: 0;
+  }
+} ;

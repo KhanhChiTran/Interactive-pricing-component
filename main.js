@@ -1,10 +1,6 @@
 const slider = document.getElementById("myRange");
 const priceOutput = document.getElementById("amount");
 const viewOutput = document.querySelector(".pageviews");
-// slider.oninput = function () {
-//   // priceOutput.innerHTML = this.value;
-//   console.log(this.value);
-// };
 
 slider.addEventListener("mousemove", function (e) {
   // console.log(e.target.value);
@@ -37,3 +33,15 @@ slider.addEventListener("mousemove", function (e) {
     return (priceOutput.innerText = "$36.00");
   }
 });
+
+const discountMark = document.querySelector(".discount");
+const checkbox = document.getElementById("switch");
+checkbox.onclick = () => {
+  if (checkbox.checked == true) {
+    discountMark.style.background = "red";
+    discountMark.style.color = "#fff";
+  } else {
+    discountMark.style.background = "hsl(15, 100%, 70%)";
+    discountMark.style.color = "hsl(14, 92%, 95%)";
+  }
+};
